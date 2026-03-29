@@ -1,0 +1,17 @@
+{
+  "name": "nim-pretext-bench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot serve.ts",
+    "build": "bun build bench.ts bridge.ts --outdir=dist --target=browser --format=esm"
+  },
+  "dependencies": {
+    "@chenglou/pretext": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "playwright": "^1.58.2"
+  }
+}

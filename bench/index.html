@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nim-pretext Benchmark: JS vs WASM</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 { color: #7fdbca; margin-bottom: 0.5rem; }
+    h2 { color: #c792ea; font-size: 1rem; margin-top: 0; }
+    #output {
+      background: #0d0d1a;
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 1rem;
+      white-space: pre-wrap;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 400px;
+    }
+    .info { color: #666; font-size: 12px; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>nim-pretext Benchmark</h1>
+  <h2>pretext JS layout() vs Nim-WASM layout()</h2>
+  <div id="output">Starting benchmark...\n</div>
+  <p class="info">
+    Open browser DevTools console for additional output.
+    Canvas element below is used by pretext for text measurement.
+  </p>
+  <canvas id="measureCanvas" style="display:none"></canvas>
+  <script type="module" src="./bench.js"></script>
+</body>
+</html>
